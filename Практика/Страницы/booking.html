@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>	broni-e</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:ital,wght@1,300&family=Source+Code+Pro&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../media/style.css" >
+</head>
+<body>
+	<div class="conteiner">
+<header class="header ">
+		<a href="./index.html"class="logoz" style="	font-size: 16px;">
+			<img src="../media/logo.svg" alt="logo"style="width:30px; height:28px;position: relative;top:10px	" class=" test-0-logo">
+			<b>FlightPool - профи в перелетах</b>
+		</a>
+	
+		<a class="credit" href="#cards_id">
+			<img src="../media/akjii.svg" style="width:28px;height: 28px;" >
+			<b>Акции</b>
+		</a>
+	
+			<a class="test-0-nav-4" href="../страницы/profile.html">
+			<img src="../media/user.svg" style="width:28px;height: 28px;" >
+			<b>Личный кабинет</b>
+		</a>
+		
+	
+			
+      <button class="item add">
+        <div class="circle">
+          <div class="close">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+        </div>
+        </div>
+        <input type="search" placeholder="навигация" class="search" />
+       </button>
+
+      <div class="nav-items items1">
+        <i class="fas fa-home"></i>
+      </div>
+      <div class="nav-items items2">
+        <i class="fas fa-camera"></i>
+      </div>
+      <div class="nav-items items3">
+        <i class="fas fa-folder"></i>
+      </div>
+      <div class="nav-items items4">
+        <i class="fas fa-heart"></i>
+      </div>
+      <div class="box">
+        <div class="box-line box-line1"></div>
+        <div class="box-line box-line2"></div>
+        <div class="box-line box-line3"></div>
+        <div class="box-line box-line4"></div>
+      </div>
+    
+
+    <div class="effect"></div>
+    <div class="kompas"><b>Навигация по странице</b></div>
+
+   
+			
+	</header>
+	<h1 style="color:#00b0ea; margin-left:100px">Бронирование</h1>
+	<h2 style="color:#19ae95"> Рейс №25-01</h2>
+		<section class="reis-info">
+			<div class="st1">
+			 		<div class="test-5-fc">Номер рейса:25-01 </div>
+			 		<hr>
+ 					<div class="test-5-fcity"> п. Вылета:Москва</div>
+ 					<hr>
+ 					<div class="test-5-from">Аэропорт:Домодедово </div>
+ 					<hr>
+				    <div class="test-5-dd"> Дата вылета:23.05.23</div>
+				    <hr>
+				    <div class="test-5-dt">Время вылета:10:00 </div>
+			</div>
+			<img src="../media/arrow-right.svg" class="arow">
+			<div class="st2">
+ 				<div class="test-5-tcity">п. Назначения:Бангладеш</div>
+ 				<hr>
+ 				<div class="test-5-to"> Аэропорт:Сиквиртал</div>
+ 				<hr>
+ 				<div clas="test-5-td"> Дата прилета:23.05.23</div>
+ 				<hr>
+				<div class="test-5-at">Время прилета:17:00  </div>
+				<hr>
+ 				<div class="test-5-fp"><b>Стоимость:4000р</b></div>
+		    </div>
+	    </section>
+	    <h2 style="color:#00AbB6; width:290px;  margin:0 auto;"> Даннные о пассажирах</h2>
+	    <section class="paterns">
+	    	<form class="broni2" action="../страницы/login.html">
+
+	    	Имя: <br> <input type="text" class=" test-input test-5-name" required><br><hr>
+		фамилия:<br> <input type="text" class="test-5-last test-input" required	><br><hr>
+  Дата рождения: <br><input type="date" class="test-5-dob test-input" required	> <br><hr>
+Номер документа:<br> <input type="text" class="test-5-doc test-input" required	> <br><hr>
+Количество пассажиров: <input class="test-5-add-remove test-input" id="odin1" type="number" required	 value="1" style="width:50px; text-align: center;" oninput="kalkulyator()"><hr>
+Итоговая стоимость: <output	id="rezultat2" class="test-5-price"><em><b>4000</b></em></output><hr>
+<button class="test-5-book">Оформить</button></form>
+	    </section>
+	   	<footer class="footr">
+			<div class="test-0-phone" style="margin-top:30px">Наш Телефон: “8 (800) 100-10-10”</div>
+			<div class="email-foot" style="margin-top:30px">Почта:flyeasypool@mail.ru</div>
+			<div class="links">
+				<a class="link" href="../страницы/profile.html"><em>Личный Кабинет</em></a><br><br>
+				<a class="link" href="../страницы/booking.html"><em>Бронирования</em></a><br><br>
+				<a class="link" href="#"><em>Контакты</em></a><br>
+			</div>
+			<div class="icon-foot">
+				<a href="#"><img src="../media/tg.svg" style="width:40px;height:40px;margin-top:30px"></a>
+					<a href="#"><img src="../media/vk.svg" style="width:40px;height:40px; margin-left:30px;margin-top:30px"></a>
+			
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript">
+		function kalkulyator(){
+			var rezultat2=4000;
+			rezultat2*=parseFloat(document.getElementById('odin1').value);
+			document.getElementById('rezultat2').innerHTML=rezultat2;
+		}</script>
+
+</body>
+</html>
